@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>5cc329c8-bc5b-4c92-a8d3-8e11c99f94dd</Guid>
+    <Name>Wotc dropship narrative blackscreen fix</Name>
+    <Description>Mod fixes after/before mission dropship narrative at blackscreen without subtitles and video visible.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcDropshipNarrativeBlackscreenFix</AssemblyName>
+    <RootNamespace>WotcDropshipNarrativeBlackscreenFix</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEngine.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModPreview.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Src\WotcDropshipNarrativeBlackscreenFix\Classes\DropshipNarrativeFix_UINarrativeMgr.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotcDropshipNarrativeBlackscreenFix\Classes\X2DownloadableContentInfo_WotcDropshipNarrativeBlackscreenFix.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Src" />
+    <Folder Include="Src\WotcDropshipNarrativeBlackscreenFix" />
+    <Folder Include="Src\WotcDropshipNarrativeBlackscreenFix\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
